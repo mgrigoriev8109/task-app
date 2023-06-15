@@ -8,3 +8,5 @@ function App() {
 }
 
 export default App;
+
+// this file handles the input field with the logic

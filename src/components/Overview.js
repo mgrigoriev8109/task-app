@@ -6,9 +6,14 @@ class Overview extends Component {
     }
 
     render() {
+        const taskItems = this.props.tasks.map(task =>
+            <li>
+                {task}
+            </li>
+            );
         return (
             <div className="Overview">
-                {this.props.task}
+                {taskItems}
             </div>
         )
     }

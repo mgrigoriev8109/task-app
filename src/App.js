@@ -13,9 +13,11 @@ class App extends Component {
   }
 
   handleSubmit(event) {
-    let newTask = event.target.value;
+    event.preventDefault();
+    let newTask = event.target.userTask.value;
+    debugger;
     this.setState({
-      tasksArray: this.tasksArray.push(newTask)
+      tasksArray:[...this.state.tasksArray, newTask]
     })
   }
 
@@ -24,7 +26,7 @@ class App extends Component {
       <div>
 
         <form onSubmit={this.handleSubmit}>
-          <label for="task">
+          <label>
             Enter task:
             <input name="userTask" type="text" />
           </label>

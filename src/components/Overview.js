@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 class Overview extends Component {
-    constructor() {
+    constructor(props) {
         super(props)
     }
 

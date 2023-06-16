@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Overview from './Overview.js';
+import Overview from './components/Overview.js';
 
 class App extends Component {
   constructor(props) {
@@ -15,7 +15,7 @@ class App extends Component {
   handleSubmit(event) {
     let newTask = event.target.value;
     this.setState({
-      tasksArray: taskArray.push(newTask)
+      tasksArray: this.tasksArray.push(newTask)
     })
   }
 
